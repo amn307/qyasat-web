@@ -1,0 +1,153 @@
+{
+  "items": [
+    {
+      "id": "site.hero.badge",
+      "key": "site.hero.badge",
+      "namespace": "homepage",
+      "label": "Hero Badge",
+      "ar": "Qyasat CMS",
+      "en": "Qyasat CMS",
+      "hint": "النص الصغير أعلى عنوان الصفحة الرئيسية",
+      "updatedAt": "2026-06-28T18:00:04.806Z"
+    },
+    {
+      "id": "site.hero.title",
+      "key": "site.hero.title",
+      "namespace": "homepage",
+      "label": "Hero Title",
+      "ar": "نبني منصات رقمية أنيقة وقابلة للنمو",
+      "en": "We build elegant digital platforms ready to scale",
+      "hint": "العنوان الرئيسي في الصفحة الأولى",
+      "updatedAt": "2026-06-28T18:00:04.806Z"
+    },
+    {
+      "id": "site.hero.subtitle",
+      "key": "site.hero.subtitle",
+      "namespace": "homepage",
+      "label": "Hero Subtitle",
+      "ar": "حلول تقنية، أتمتة، ذكاء اصطناعي، وتطوير أعمال تساعد مشروعك على التحول إلى منتج رقمي واضح وقوي.",
+      "en": "Technology, automation, AI, and business development solutions that help your project become a clear and powerful digital product.",
+      "hint": "الوصف أسفل العنوان الرئيسي",
+      "updatedAt": "2026-06-28T18:00:04.806Z"
+    },
+    {
+      "id": "site.hero.cta.primary",
+      "key": "site.hero.cta.primary",
+      "namespace": "homepage",
+      "label": "Primary CTA",
+      "ar": "ابدأ مشروعك",
+      "en": "Start your project",
+      "hint": "زر الدعوة الرئيسي",
+      "updatedAt": "2026-06-28T18:00:04.806Z"
+    },
+    {
+      "id": "site.hero.cta.secondary",
+      "key": "site.hero.cta.secondary",
+      "namespace": "homepage",
+      "label": "Secondary CTA",
+      "ar": "استعرض الخدمات",
+      "en": "Explore services",
+      "hint": "زر الدعوة الثانوي",
+      "updatedAt": "2026-06-28T18:00:04.806Z"
+    },
+    {
+      "id": "site.nav.home",
+      "key": "site.nav.home",
+      "namespace": "navigation",
+      "label": "Home Link",
+      "ar": "الرئيسية",
+      "en": "Home",
+      "updatedAt": "2026-06-28T18:00:04.807Z"
+    },
+    {
+      "id": "site.nav.services",
+      "key": "site.nav.services",
+      "namespace": "navigation",
+      "label": "Services Link",
+      "ar": "الخدمات",
+      "en": "Services",
+      "updatedAt": "2026-06-28T18:00:04.807Z"
+    },
+    {
+      "id": "site.nav.blog",
+      "key": "site.nav.blog",
+      "namespace": "navigation",
+      "label": "Blog Link",
+      "ar": "المدونة",
+      "en": "Blog",
+      "updatedAt": "2026-06-28T18:00:04.807Z"
+    },
+    {
+      "id": "site.nav.contact",
+      "key": "site.nav.contact",
+      "namespace": "navigation",
+      "label": "Contact Link",
+      "ar": "تواصل معنا",
+      "en": "Contact",
+      "updatedAt": "2026-06-28T18:00:04.807Z"
+    },
+    {
+      "id": "site.services.title",
+      "key": "site.services.title",
+      "namespace": "services",
+      "label": "Services Title",
+      "ar": "خدمات تقنية مصممة للنمو",
+      "en": "Technology services designed for growth",
+      "updatedAt": "2026-06-28T18:00:04.807Z"
+    },
+    {
+      "id": "site.services.subtitle",
+      "key": "site.services.subtitle",
+      "namespace": "services",
+      "label": "Services Subtitle",
+      "ar": "نربط بين التقنية، التسويق، الأتمتة، والذكاء الاصطناعي لبناء حلول عملية قابلة للتوسع.",
+      "en": "We connect technology, marketing, automation, and AI to build practical scalable solutions.",
+      "updatedAt": "2026-06-28T18:00:04.807Z"
+    },
+    {
+      "id": "site.contact.title",
+      "key": "site.contact.title",
+      "namespace": "contact",
+      "label": "Contact Title",
+      "ar": "احكِ لنا عن مشروعك",
+      "en": "Tell us about your project",
+      "updatedAt": "2026-06-28T18:00:04.807Z"
+    },
+    {
+      "id": "site.contact.subtitle",
+      "key": "site.contact.subtitle",
+      "namespace": "contact",
+      "label": "Contact Subtitle",
+      "ar": "أرسل تفاصيل فكرتك وسنساعدك في تحويلها إلى خطة واضحة قابلة للتنفيذ.",
+      "en": "Send your idea details and we will help turn them into a clear executable plan.",
+      "updatedAt": "2026-06-28T18:00:04.807Z"
+    },
+    {
+      "id": "site.blog.title",
+      "key": "site.blog.title",
+      "namespace": "blog",
+      "label": "Blog Title",
+      "ar": "مدونة قياسات",
+      "en": "Qyasat Blog",
+      "updatedAt": "2026-06-28T18:00:04.807Z"
+    },
+    {
+      "id": "site.blog.subtitle",
+      "key": "site.blog.subtitle",
+      "namespace": "blog",
+      "label": "Blog Subtitle",
+      "ar": "أفكار ورؤى في التقنية، الأعمال، الأتمتة، والذكاء الاصطناعي.",
+      "en": "Insights about technology, business, automation, and AI.",
+      "updatedAt": "2026-06-28T18:00:04.807Z"
+    },
+    {
+      "id": "site.footer.tagline",
+      "key": "site.footer.tagline",
+      "namespace": "footer",
+      "label": "Footer Tagline",
+      "ar": "قياسات — ندير المحتوى ونقيس الأداء بوضوح.",
+      "en": "قياسات — We manage content and measure digital performance.",
+      "updatedAt": "2026-06-28T18:00:04.807Z"
+    }
+  ]
+}

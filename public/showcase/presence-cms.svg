@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="920" viewBox="0 0 1400 920">
+  <rect width="1400" height="920" rx="64" fill="#211814"/>
+  <rect x="78" y="78" width="1244" height="764" rx="54" fill="#FBF5EE"/>
+  <rect x="140" y="146" width="1120" height="142" rx="44" fill="#fff"/>
+  <rect x="198" y="198" width="395" height="40" rx="20" fill="#211814"/>
+  <rect x="900" y="184" width="250" height="72" rx="36" fill="#D8B579"/>
+  <rect x="140" y="350" width="500" height="390" rx="52" fill="#211814"/>
+  <circle cx="390" cy="508" r="102" fill="#D8B579"/>
+  <rect x="245" y="642" width="300" height="34" rx="17" fill="#fff" opacity=".68"/>
+  <rect x="700" y="350" width="560" height="94" rx="34" fill="#fff"/>
+  <rect x="700" y="486" width="560" height="94" rx="34" fill="#fff"/>
+  <rect x="700" y="622" width="560" height="118" rx="38" fill="#fff"/>
+  <text x="140" y="800" fill="#211814" font-family="Arial" font-size="54" font-weight="900">Presence CMS</text>
+</svg>

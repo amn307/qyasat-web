@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="920" viewBox="0 0 1400 920">
+  <rect width="1400" height="920" rx="64" fill="#0B0B09"/>
+  <rect x="74" y="74" width="1252" height="772" rx="54" fill="#F4EFE6"/>
+  <rect x="124" y="124" width="1152" height="104" rx="30" fill="#fff"/>
+  <circle cx="180" cy="176" r="23" fill="#D8B579"/>
+  <rect x="226" y="157" width="310" height="38" rx="19" fill="#17120C"/>
+  <rect x="915" y="152" width="135" height="48" rx="24" fill="#17120C"/>
+  <rect x="1070" y="152" width="140" height="48" rx="24" fill="#D8B579"/>
+  <rect x="124" y="284" width="500" height="382" rx="44" fill="#17120C"/>
+  <rect x="184" y="352" width="280" height="42" rx="21" fill="#D8B579"/>
+  <rect x="184" y="430" width="350" height="28" rx="14" fill="#fff" opacity=".72"/>
+  <rect x="184" y="480" width="280" height="28" rx="14" fill="#fff" opacity=".42"/>
+  <rect x="184" y="570" width="200" height="64" rx="32" fill="#D8B579"/>
+  <rect x="674" y="284" width="602" height="110" rx="36" fill="#fff"/>
+  <rect x="724" y="322" width="270" height="34" rx="17" fill="#17120C"/>
+  <rect x="674" y="438" width="280" height="228" rx="38" fill="#fff"/>
+  <rect x="996" y="438" width="280" height="228" rx="38" fill="#fff"/>
+  <text x="124" y="780" fill="#17120C" font-family="Arial" font-size="54" font-weight="900">Barcode Platform</text>
+</svg>

@@ -1,0 +1,147 @@
+{
+  "brand": {
+    "name": "Qyasat",
+    "tagline": "CMS & Measurement Platform"
+  },
+  "nav": [
+    { "label": "Services", "href": "#services" },
+    { "label": "Automation", "href": "#ai" },
+    { "label": "Process", "href": "#process" },
+    { "label": "Work", "href": "#work" },
+    { "label": "Contact", "href": "#contact" }
+  ],
+  "hero": {
+    "kicker": "Content Management and Measurement Platform",
+    "titlePrefix": "Build a smarter",
+    "titleHighlight": "CMS for content, data, and growth",
+    "subtitle": "Qyasat CMS gives teams a clean control center for content, services, media, SEO, tracking pixels, messages, and AI-assisted workflows.",
+    "primaryCta": "Start with Qyasat",
+    "primaryHref": "#contact",
+    "secondaryCta": "Explore the platform",
+    "secondaryHref": "#services"
+  },
+  "visual": {
+    "codeTitle": "qyasatCore.deploy()",
+    "codeText": "Content, analytics, automation, and continuous improvement.",
+    "cardTitle": "CMS Ready",
+    "cardText": "Content, media, SEO, messages, services, and dashboards."
+  },
+  "trust": {
+    "label": "Built as a complete operating system for modern websites",
+    "items": [
+      { "value": "CMS", "label": "Content control" },
+      { "value": "SEO", "label": "Search visibility" },
+      { "value": "Media", "label": "Asset library" },
+      { "value": "AI", "label": "Assisted workflows" }
+    ]
+  },
+  "services": {
+    "kicker": "Services",
+    "title": "Everything you need to run a serious digital presence",
+    "description": "One platform to organize content, manage services, improve search, track performance, and handle customer messages.",
+    "items": [
+      {
+        "icon": "01",
+        "title": "Content Management",
+        "description": "Manage homepage sections, site text, pages, services, and updates from a clean control panel.",
+        "tag": "CMS"
+      },
+      {
+        "icon": "02",
+        "title": "SEO Control",
+        "description": "Edit titles, descriptions, keywords, Open Graph data, and visibility details without touching code.",
+        "tag": "SEO"
+      },
+      {
+        "icon": "03",
+        "title": "Media Library",
+        "description": "Upload, organize, preview, and reuse logos, images, files, and marketing assets.",
+        "tag": "Media"
+      },
+      {
+        "icon": "04",
+        "title": "Messages & CRM",
+        "description": "Collect contact messages, classify requests, follow up, and keep internal notes.",
+        "tag": "CRM"
+      }
+    ]
+  },
+  "ai": {
+    "kicker": "Automation & AI",
+    "title": "AI where it supports real operations",
+    "description": "Qyasat can support writing, summarization, content drafts, message preparation, analysis, and admin workflows.",
+    "items": [
+      {
+        "title": "Message Writer",
+        "description": "Generate WhatsApp, email, SMS, and website copy with the right tone and structure."
+      },
+      {
+        "title": "Content Assistance",
+        "description": "Prepare drafts, improve wording, and speed up daily content operations."
+      },
+      {
+        "title": "Workflow Automation",
+        "description": "Reduce repeated manual steps and connect content, messages, and operations."
+      }
+    ]
+  },
+  "process": {
+    "kicker": "Process",
+    "title": "From setup to daily operation",
+    "description": "A clear workflow for launching, managing, and improving the platform.",
+    "items": [
+      {
+        "title": "Configure",
+        "description": "Set brand, content, pages, services, SEO, media, and tracking."
+      },
+      {
+        "title": "Publish",
+        "description": "Launch updates quickly with a stable structure and clean interface."
+      },
+      {
+        "title": "Measure",
+        "description": "Track leads, performance, visibility, and operational signals."
+      },
+      {
+        "title": "Improve",
+        "description": "Use feedback and data to refine pages, messages, and conversion paths."
+      }
+    ]
+  },
+  "work": {
+    "kicker": "Work",
+    "title": "Designed for real business systems",
+    "description": "Qyasat CMS is not just a website shell; it is a control layer for content, operations, and growth.",
+    "items": [
+      {
+        "tag": "Platform",
+        "title": "Public Website",
+        "description": "A polished bilingual site with structured sections and conversion paths."
+      },
+      {
+        "tag": "Admin",
+        "title": "Control Panel",
+        "description": "A dashboard for content, media, SEO, services, messages, and settings."
+      },
+      {
+        "tag": "Growth",
+        "title": "Measurement Layer",
+        "description": "Tracking pixels, SEO metadata, message inbox, and future analytics."
+      }
+    ]
+  },
+  "estimator": {
+    "title": "No technical complexity required",
+    "description": "Tell us your goal, and we turn it into a clear content, system, and growth plan.",
+    "cta": "Request a project estimate",
+    "href": "#contact"
+  },
+  "contact": {
+    "title": "Ready to build your next CMS?",
+    "description": "Send the project idea, the current problem, or the result you want to reach.",
+    "links": [
+      { "label": "Contact on WhatsApp", "href": "https://wa.me/" },
+      { "label": "Email us", "href": "mailto:hello@qyasat.sa" }
+    ]
+  }
+}

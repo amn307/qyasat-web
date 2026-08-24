@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="920" viewBox="0 0 1400 920">
+  <rect width="1400" height="920" rx="64" fill="#10231F"/>
+  <rect x="76" y="76" width="1248" height="768" rx="54" fill="#F5EFE5"/>
+  <rect x="126" y="126" width="420" height="668" rx="48" fill="#173A33"/>
+  <rect x="180" y="192" width="230" height="38" rx="19" fill="#D8B579"/>
+  <rect x="180" y="278" width="285" height="26" rx="13" fill="#fff" opacity=".70"/>
+  <rect x="180" y="326" width="230" height="26" rx="13" fill="#fff" opacity=".42"/>
+  <rect x="180" y="430" width="250" height="66" rx="33" fill="#D8B579"/>
+  <rect x="610" y="136" width="640" height="130" rx="40" fill="#fff"/>
+  <rect x="666" y="184" width="310" height="36" rx="18" fill="#173A33"/>
+  <rect x="610" y="318" width="300" height="220" rx="42" fill="#fff"/>
+  <rect x="950" y="318" width="300" height="220" rx="42" fill="#fff"/>
+  <rect x="610" y="590" width="640" height="150" rx="42" fill="#173A33"/>
+  <text x="610" y="796" fill="#173A33" font-family="Arial" font-size="54" font-weight="900">ITQAN Workshops</text>
+</svg>

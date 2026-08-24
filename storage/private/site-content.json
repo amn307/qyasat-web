@@ -1,0 +1,179 @@
+{
+  "settings": {
+    "brand": {
+      "logoUrl": "",
+      "logoAlt": "Qyasat",
+      "faviconUrl": "",
+      "ogImageUrl": ""
+    },
+    "contact": {
+      "email": "moamen.fz@gmail.com",
+      "phone": "",
+      "whatsapp": "",
+      "addressAr": "",
+      "addressEn": ""
+    },
+    "social": {
+      "instagram": "",
+      "x": "",
+      "linkedin": "",
+      "github": "",
+      "tiktok": ""
+    }
+  },
+  "home": {
+    "ar": {
+      "badge": "Qyasat CMS",
+      "title": "نحوّل الأفكار إلى أنظمة رقمية تنمو مع عملك.",
+      "subtitle": "نبني حلولًا تجمع بين تطوير الأعمال، التسويق التقني، البرمجة، الأتمتة، والذكاء الاصطناعي لتحويل التحديات إلى أنظمة تعمل.",
+      "heroImageUrl": "",
+      "primaryCta": "ابدأ مشروعك",
+      "secondaryCta": "استكشف الخدمات",
+      "servicesTitle": "خدمات مصممة للنمو",
+      "whyTitle": "لسنا مجرد مطورين",
+      "whyText": "نفهم هدفك التجاري أولًا، ثم نبني التقنية التي تخدمه. لذلك تكون الحلول أوضح، أسرع، وأقرب للنتيجة.",
+      "processTitle": "كيف نعمل؟",
+      "process": [
+        "نفهم احتياجك",
+        "نرسم الحل",
+        "نبني النظام",
+        "نطوره معك"
+      ]
+    },
+    "en": {
+      "badge": "Qyasat CMS",
+      "title": "We turn ideas into digital systems that grow with your business.",
+      "subtitle": "We build solutions that combine business development, technical marketing, software, automation, and AI to turn challenges into working systems.",
+      "heroImageUrl": "",
+      "primaryCta": "Start your project",
+      "secondaryCta": "Explore services",
+      "servicesTitle": "Services built for growth",
+      "whyTitle": "More than developers",
+      "whyText": "We understand your business goal first, then build the technology that serves it. That makes the solution clearer, faster, and closer to results.",
+      "processTitle": "How we work",
+      "process": [
+        "Understand",
+        "Design",
+        "Build",
+        "Improve"
+      ]
+    }
+  },
+  "services": {
+    "items": [
+      {
+        "id": "business-development",
+        "title": {
+          "ar": "تطوير أعمال",
+          "en": "Business Development"
+        },
+        "description": {
+          "ar": "تحليل النموذج، تحسين التشغيل، وبناء مسارات نمو أوضح.",
+          "en": "Business model analysis, operational improvement, and clearer growth paths."
+        },
+        "imageUrl": "",
+        "isActive": true,
+        "order": 1
+      },
+      {
+        "id": "technical-marketing",
+        "title": {
+          "ar": "حلول تسويقية تقنية",
+          "en": "Technical Marketing Solutions"
+        },
+        "description": {
+          "ar": "صفحات هبوط، تتبع أداء، حملات ذكية، وتحسين التحويل.",
+          "en": "Landing pages, tracking, smart campaigns, and conversion optimization."
+        },
+        "imageUrl": "",
+        "isActive": true,
+        "order": 2
+      },
+      {
+        "id": "technical-development",
+        "title": {
+          "ar": "تطوير تقني",
+          "en": "Technical Development"
+        },
+        "description": {
+          "ar": "مواقع، منصات، SaaS، لوحات تحكم، وربط أنظمة.",
+          "en": "Websites, platforms, SaaS, dashboards, and system integrations."
+        },
+        "imageUrl": "",
+        "isActive": true,
+        "order": 3
+      },
+      {
+        "id": "automation",
+        "title": {
+          "ar": "أتمتة",
+          "en": "Automation"
+        },
+        "description": {
+          "ar": "تحويل المهام المتكررة إلى أنظمة تعمل تلقائيًا.",
+          "en": "Turning repetitive work into automated systems."
+        },
+        "imageUrl": "",
+        "isActive": true,
+        "order": 4
+      },
+      {
+        "id": "ai",
+        "title": {
+          "ar": "ذكاء اصطناعي",
+          "en": "Artificial Intelligence"
+        },
+        "description": {
+          "ar": "وكلاء ذكيون، ردود، تحليل، محتوى، ومساعدة في القرار.",
+          "en": "AI agents, replies, analysis, content, and decision support."
+        },
+        "imageUrl": "",
+        "isActive": true,
+        "order": 5
+      }
+    ]
+  },
+  "seo": {
+    "ar": {
+      "siteTitle": "قياسات | تطوير أعمال وتقنية وذكاء اصطناعي",
+      "description": "حلول تطوير أعمال، تسويق تقني، أتمتة، وذكاء اصطناعي.",
+      "keywords": "تطوير أعمال, ذكاء اصطناعي, أتمتة, تطوير مواقع, تسويق تقني",
+      "ogTitle": "قياسات",
+      "ogDescription": "نحوّل الأفكار إلى أنظمة رقمية تنمو مع عملك."
+    },
+    "en": {
+      "siteTitle": "Qyasat | Business, Technology and AI",
+      "description": "Business development, technical marketing, automation, and AI solutions.",
+      "keywords": "business development, AI, automation, web development, technical marketing",
+      "ogTitle": "Qyasat",
+      "ogDescription": "We turn ideas into digital systems that grow with your business."
+    }
+  },
+  "pixels": [],
+  "tracking": {
+    "firstPartyAnalyticsEnabled": true,
+    "ga4": {
+      "enabled": true,
+      "measurementId": "GTM-MNFTCQBP"
+    },
+    "gtm": {
+      "enabled": false,
+      "containerId": ""
+    },
+    "meta": {
+      "enabled": false,
+      "pixelId": ""
+    },
+    "tiktok": {
+      "enabled": false,
+      "pixelId": ""
+    },
+    "clarity": {
+      "enabled": false,
+      "projectId": ""
+    },
+    "customHead": "",
+    "customBody": ""
+  },
+  "updatedAt": "2026-07-22T08:37:53.647Z"
+}

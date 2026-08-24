@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="920" viewBox="0 0 1400 920">
+  <rect width="1400" height="920" rx="64" fill="#17120C"/>
+  <rect x="76" y="76" width="1248" height="768" rx="54" fill="#F4EFE6"/>
+  <rect x="130" y="130" width="1140" height="120" rx="40" fill="#fff"/>
+  <rect x="184" y="174" width="320" height="36" rx="18" fill="#17120C"/>
+  <rect x="130" y="310" width="260" height="170" rx="42" fill="#17120C"/>
+  <rect x="430" y="310" width="260" height="170" rx="42" fill="#fff"/>
+  <rect x="730" y="310" width="260" height="170" rx="42" fill="#fff"/>
+  <rect x="1030" y="310" width="240" height="170" rx="42" fill="#fff"/>
+  <rect x="130" y="540" width="720" height="220" rx="46" fill="#fff"/>
+  <polyline points="180,700 270,640 360,670 455,590 550,620 650,560 790,600" fill="none" stroke="#D8B579" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="900" y="540" width="370" height="220" rx="46" fill="#17120C"/>
+  <circle cx="1085" cy="650" r="76" fill="#D8B579"/>
+  <text x="130" y="820" fill="#17120C" font-family="Arial" font-size="54" font-weight="900">Merchant Intelligence</text>
+</svg>

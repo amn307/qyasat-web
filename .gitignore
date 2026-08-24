@@ -1,0 +1,17 @@
+cat >> .gitignore <<'EOF'
+
+# Dependencies
+node_modules/
+
+# Next.js generated files
+.next/
+out/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# macOS
+.DS_Store
+EOF

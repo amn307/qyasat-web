@@ -1,0 +1,22 @@
+{
+  "brand": {
+    "logoUrl": "",
+    "logoAlt": "Qyasat",
+    "faviconUrl": "/brand/qyasat-favicon-20260704d.ico",
+    "ogImageUrl": "/brand/qyasat-logo.svg"
+  },
+  "contact": {
+    "email": "moamen.fz@gmail.com",
+    "phone": "",
+    "whatsapp": "",
+    "addressAr": "",
+    "addressEn": ""
+  },
+  "social": {
+    "instagram": "",
+    "x": "",
+    "linkedin": "",
+    "github": "",
+    "tiktok": ""
+  }
+}
