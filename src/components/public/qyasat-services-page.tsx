@@ -90,7 +90,7 @@ export async function QyasatServicesPage({ locale }: { locale: ServicesLocale })
 
       <section className="qy-services-cta">
         <div><span>QY / SERVICES</span><h2>{copy.ctaTitle}</h2><p>{copy.ctaText}</p></div>
-        <a href={`/${locale}#contact`}>{copy.cta}</a>
+        <a href={`/${locale}/contact`}>{copy.cta}</a>
       </section>
 
       <SiteFooter locale={locale} settings={settings} brandName={home.brand.name} brandTagline={home.brand.tagline} />

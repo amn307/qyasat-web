@@ -95,7 +95,7 @@ export function SiteFooter({ locale, settings, brandName, brandTagline }: SiteFo
             <a href={`/${locale}#ai`}>{t.ai}</a>
             <a href={`/${locale}#work`}>{t.work}</a>
             <a href={`/${locale}#process`}>{t.process}</a>
-            <a href={`/${locale}#contact`}>{t.contactLink}</a>
+            <a href={`/${locale}/contact`}>{t.contactLink}</a>
           </nav>
         </div>
 

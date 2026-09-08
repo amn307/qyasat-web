@@ -5,9 +5,12 @@ import type { SiteSettings } from "@/lib/site-settings";
 type Locale = "ar" | "en";
 
 function resolveHref(href: string, locale: Locale, internalPage: boolean) {
-  // Services is a dedicated page rather than an in-page homepage section.
+  // Services and Contact are dedicated pages rather than in-page homepage sections.
   if (href === "#services" || /\/(?:en|ar)\/services$/.test(href)) {
     return `/${locale}/services`;
+  }
+  if (href === "#contact" || /\/(?:en|ar)\/contact$/.test(href)) {
+    return `/${locale}/contact`;
   }
   if (!internalPage || !href.startsWith("#")) return href;
   return `/${locale}${href}`;
@@ -38,9 +41,31 @@ export function QyasatSiteHeader({
   activeHref?: string;
 }) {
   const projectHref = `/${locale}/projects`;
-  const nav = home.nav.some((item) => item.href.includes("/projects"))
-    ? home.nav
-    : [...home.nav, { label: locale === "ar" ? "المشاريع" : "Projects", href: projectHref }];
+  const blogHref = `/${locale}/blog`;
+
+  // Keep the homepage sections available, but remove Work and Process from the site header.
+  // Blog and Projects are dedicated pages and are always exposed in the navigation.
+  let nav = home.nav.filter((item) => {
+    const href = item.href.toLowerCase();
+    const label = item.label.trim().toLowerCase();
+    return !(
+      href === "#work" ||
+      href === "#process" ||
+      /\/(?:en|ar)\/(?:work|process)$/.test(href) ||
+      label === "work" ||
+      label === "process" ||
+      label === "الأعمال" ||
+      label === "طريقة العمل"
+    );
+  });
+
+  if (!nav.some((item) => item.href.includes("/projects"))) {
+    nav = [...nav, { label: locale === "ar" ? "المشاريع" : "Projects", href: projectHref }];
+  }
+
+  if (!nav.some((item) => item.href.includes("/blog"))) {
+    nav = [...nav, { label: locale === "ar" ? "المدونة" : "Blog", href: blogHref }];
+  }
 
   const menuLabel = locale === "ar" ? "فتح القائمة" : "Open menu";
 

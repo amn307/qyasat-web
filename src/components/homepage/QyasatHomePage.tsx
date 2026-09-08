@@ -296,7 +296,7 @@ export function QyasatHomePage({ locale = "ar" }: QyasatHomePageProps) {
             ))}
           </nav>
 
-          <a className="qyasat-lux-header-cta" href="#contact">
+          <a className="qyasat-lux-header-cta" href={`/${locale}/contact`}>
             {t.start}
           </a>
         </header>
@@ -316,7 +316,7 @@ export function QyasatHomePage({ locale = "ar" }: QyasatHomePageProps) {
             <p>{t.subtitle}</p>
 
             <div className="qyasat-lux-actions">
-              <a className="qyasat-lux-primary" href="#contact">
+              <a className="qyasat-lux-primary" href={`/${locale}/contact`}>
                 {t.primaryCta}
               </a>
               <a className="qyasat-lux-secondary" href="#solutions">
@@ -456,7 +456,7 @@ export function QyasatHomePage({ locale = "ar" }: QyasatHomePageProps) {
                   <dd>{estimate[2]}</dd>
                 </div>
               </dl>
-              <a href="#contact">{t.bookEngineer}</a>
+              <a href={`/${locale}/contact`}>{t.bookEngineer}</a>
             </aside>
           </div>
         </section>

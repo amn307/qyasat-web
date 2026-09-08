@@ -14,41 +14,46 @@ const serviceOptions = [
 
 const text = {
   ar: {
-    name: "الاسم",
-    phone: "الجوال",
+    name: "الاسم الكامل",
+    phone: "رقم الهاتف",
     email: "البريد الإلكتروني",
-    service: "الخدمة",
+    service: "الخدمة المطلوبة",
     budget: "الميزانية أو نطاق المشروع",
-    message: "رسالتك",
-    submit: "إرسال الرسالة",
+    message: "تفاصيل المشروع",
+    messagePlaceholder: "اكتب لنا التفاصيل والتوضيحات التي تساعدنا على فهم احتياجك بشكل أفضل.",
+    selectService: "اختر الخدمة",
+    submit: "إرسال الطلب",
     sending: "جاري الإرسال...",
-    success: "تم استلام رسالتك بنجاح.",
-    error: "تعذر إرسال الرسالة.",
+    success: "تم استلام طلبك بنجاح. سنتواصل معك قريباً.",
+    error: "تعذر إرسال الطلب. يرجى المحاولة مرة أخرى.",
   },
   en: {
-    name: "Name",
-    phone: "Phone",
-    email: "Email",
-    service: "Service",
-    budget: "Budget or project scope",
-    message: "Message",
-    submit: "Send message",
+    name: "Full Name",
+    phone: "Phone Number",
+    email: "Email Address",
+    service: "Required Service",
+    budget: "Budget or Project Scope",
+    message: "Project Details",
+    messagePlaceholder: "Share the details and context that will help us understand your project better.",
+    selectService: "Select service",
+    submit: "Send Request",
     sending: "Sending...",
-    success: "Your message has been received.",
-    error: "Failed to send message.",
+    success: "Your request has been received. We’ll contact you soon.",
+    error: "We couldn’t send your request. Please try again.",
   },
 };
 
 export function ContactForm({ locale }: { locale: Locale }) {
   const t = text[locale];
   const [status, setStatus] = useState("");
+  const [statusType, setStatusType] = useState<"idle" | "success" | "error">("idle");
   const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({
     locale,
     name: "",
     phone: "",
     email: "",
-    service: "general",
+    service: "",
     budget: "",
     message: "",
     website: "",
@@ -63,82 +68,104 @@ export function ContactForm({ locale }: { locale: Locale }) {
 
     setLoading(true);
     setStatus(t.sending);
+    setStatusType("idle");
 
-    const res = await fetch("/api/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ ...form, locale }),
-    });
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ ...form, locale }),
+      });
 
-    setLoading(false);
+      if (!res.ok) {
+        throw new Error(t.error);
+      }
 
-    if (!res.ok) {
+      setForm({
+        locale,
+        name: "",
+        phone: "",
+        email: "",
+        service: "",
+        budget: "",
+        message: "",
+        website: "",
+      });
+      setStatus(t.success);
+      setStatusType("success");
+    } catch {
       setStatus(t.error);
-      return;
+      setStatusType("error");
+    } finally {
+      setLoading(false);
     }
-
-    setForm({
-      locale,
-      name: "",
-      phone: "",
-      email: "",
-      service: "general",
-      budget: "",
-      message: "",
-      website: "",
-    });
-    setStatus(t.success);
   }
 
-  return (
-    <form onSubmit={submit} className="mt-10 grid gap-4 rounded-[var(--qyasat-card-radius)] border border-[var(--qyasat-border)] bg-[var(--qyasat-surface)] p-6">
-      <input
-        value={form.website}
-        onChange={(e) => update("website", e.target.value)}
-        className="hidden"
-        tabIndex={-1}
-        autoComplete="off"
-      />
+  const fieldClass =
+    "w-full min-w-0 rounded-2xl border border-[var(--qyasat-border)] bg-[var(--qyasat-bg)] px-4 py-3.5 text-base text-[var(--qyasat-text)] outline-none transition focus:border-[var(--qyasat-primary)] focus:ring-2 focus:ring-[color-mix(in_srgb,var(--qyasat-primary)_10%,transparent)]";
+  const labelClass =
+    "mb-2 block text-[0.72rem] font-black uppercase tracking-[0.18em] text-[var(--qyasat-muted)]";
 
-      <div className="grid gap-4 md:grid-cols-2">
-        <label className="grid gap-2">
-          <span className="text-sm font-bold text-[var(--qyasat-muted)]">{t.name}</span>
+  return (
+    <form
+      onSubmit={submit}
+      className="relative rounded-[var(--qyasat-card-radius)] border border-[var(--qyasat-border)] bg-[var(--qyasat-surface)] p-6 shadow-[0_22px_70px_color-mix(in_srgb,var(--qyasat-text)_6%,transparent)] sm:p-8"
+    >
+      <div aria-hidden="true" className="absolute left-[-9999px] top-auto h-px w-px overflow-hidden">
+        <label htmlFor="contact-website">Website</label>
+        <input
+          id="contact-website"
+          value={form.website}
+          onChange={(e) => update("website", e.target.value)}
+          tabIndex={-1}
+          autoComplete="off"
+        />
+      </div>
+
+      <div className="grid gap-5 sm:grid-cols-2">
+        <label>
+          <span className={labelClass}>{t.name}</span>
           <input
             required
             value={form.name}
             onChange={(e) => update("name", e.target.value)}
-            className="rounded-2xl border border-[var(--qyasat-border)] bg-[var(--qyasat-bg)] px-4 py-3 text-[var(--qyasat-text)] outline-none"
+            className={fieldClass}
           />
         </label>
 
-        <label className="grid gap-2">
-          <span className="text-sm font-bold text-[var(--qyasat-muted)]">{t.phone}</span>
+        <label>
+          <span className={labelClass}>{t.phone}</span>
           <input
             value={form.phone}
             onChange={(e) => update("phone", e.target.value)}
-            className="rounded-2xl border border-[var(--qyasat-border)] bg-[var(--qyasat-bg)] px-4 py-3 text-[var(--qyasat-text)] outline-none"
+            type="tel"
+            className={fieldClass}
           />
         </label>
 
-        <label className="grid gap-2">
-          <span className="text-sm font-bold text-[var(--qyasat-muted)]">{t.email}</span>
+        <label>
+          <span className={labelClass}>{t.email}</span>
           <input
             value={form.email}
             onChange={(e) => update("email", e.target.value)}
             type="email"
-            className="rounded-2xl border border-[var(--qyasat-border)] bg-[var(--qyasat-bg)] px-4 py-3 text-[var(--qyasat-text)] outline-none"
+            className={fieldClass}
           />
         </label>
 
-        <label className="grid gap-2">
-          <span className="text-sm font-bold text-[var(--qyasat-muted)]">{t.service}</span>
+        <label>
+          <span className={labelClass}>{t.service}</span>
           <select
+            required
             value={form.service}
             onChange={(e) => update("service", e.target.value)}
-            className="rounded-2xl border border-[var(--qyasat-border)] bg-[var(--qyasat-bg)] px-4 py-3 text-[var(--qyasat-text)] outline-none"
+            className={fieldClass}
           >
+            <option value="" disabled>
+              {t.selectService}
+            </option>
             {serviceOptions.map((option) => (
               <option key={option.value} value={option.value}>
                 {option[locale]}
@@ -148,34 +175,45 @@ export function ContactForm({ locale }: { locale: Locale }) {
         </label>
       </div>
 
-      <label className="grid gap-2">
-        <span className="text-sm font-bold text-[var(--qyasat-muted)]">{t.budget}</span>
+      <label className="mt-5 block">
+        <span className={labelClass}>{t.budget}</span>
         <input
           value={form.budget}
           onChange={(e) => update("budget", e.target.value)}
-          className="rounded-2xl border border-[var(--qyasat-border)] bg-[var(--qyasat-bg)] px-4 py-3 text-[var(--qyasat-text)] outline-none"
+          className={fieldClass}
         />
       </label>
 
-      <label className="grid gap-2">
-        <span className="text-sm font-bold text-[var(--qyasat-muted)]">{t.message}</span>
+      <label className="mt-5 block">
+        <span className={labelClass}>{t.message}</span>
         <textarea
           required
           value={form.message}
           onChange={(e) => update("message", e.target.value)}
-          rows={6}
-          className="rounded-2xl border border-[var(--qyasat-border)] bg-[var(--qyasat-bg)] px-4 py-3 text-[var(--qyasat-text)] outline-none"
+          rows={7}
+          placeholder={t.messagePlaceholder}
+          className={`${fieldClass} resize-y`}
         />
       </label>
 
       <button
         disabled={loading}
-        className="rounded-[var(--qyasat-button-radius)] bg-[var(--qyasat-primary)] px-7 py-3 text-sm font-black text-[var(--qyasat-primary-text)] disabled:opacity-50"
+        className="mt-6 inline-flex min-h-12 items-center justify-center rounded-[var(--qyasat-button-radius)] bg-[var(--qyasat-primary)] px-7 py-3 text-sm font-black text-[var(--qyasat-primary-text)] shadow-[0_14px_32px_color-mix(in_srgb,var(--qyasat-primary)_18%,transparent)] transition-transform hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-50"
       >
         {loading ? t.sending : t.submit}
       </button>
 
-      {status && <p className="text-sm font-bold text-[var(--qyasat-muted)]">{status}</p>}
+      {status && (
+        <p
+          role="status"
+          aria-live="polite"
+          className={`mt-4 text-sm font-bold ${
+            statusType === "error" ? "text-red-700" : statusType === "success" ? "text-green-700" : "text-[var(--qyasat-muted)]"
+          }`}
+        >
+          {status}
+        </p>
+      )}
     </form>
   );
 }

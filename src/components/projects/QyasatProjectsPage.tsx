@@ -90,7 +90,7 @@ export async function QyasatProjectsPage({ locale }: { locale: ProjectsLocale })
 
         <section className="qy-projects-cta">
           <div><span>QY / NEXT</span><h2>{t.ctaTitle}</h2><p>{t.ctaText}</p></div>
-          <a href={`/${locale}#contact`}>{t.cta}</a>
+          <a href={`/${locale}/contact`}>{t.cta}</a>
         </section>
 
         <SiteFooter locale={locale} settings={settings} brandName={home.brand.name} brandTagline={home.brand.tagline} />
